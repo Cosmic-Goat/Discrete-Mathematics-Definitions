@@ -27,16 +27,16 @@
 \begin{document}
 	\maketitle
 	
+	\section*{Divisibility}
+	
 	\begin{enumerate}
 		\item Divisible: Let $a,b$ be integers.
 		We say that $b$ divides $a$ if
-		
 		\[\exists c\in\mathbb{Z}\:\: \text{s.t.} \:\: bc=a\]
 		
 		\item Even: An integer $a$ is called even provided $2|a$.
 		
 		\item Odd: An integer $b$ is called odd if
-		
 		\[\exists a\in\mathbb{Z} \:\: \text{s.t.} \:\: b=2a+1\]
 		
 		\item Prime: An integer $p$ is prime if $p>1$ and the only positive divisors of $p$ are $1$ and $p$.
@@ -44,9 +44,12 @@
 		\item Composite: An integer $a$ is composite if $a>0$ and there is an integer $b$ s.t. $1<b<a$ and $b|a$.
 		
 		\item Perfect integer: An integer $a$ is a perfect integer provided
-		
 		\[a=\sum_{n=1}^k x,\:\: x_n|a\]
-		
+	\end{enumerate}
+	
+	\section*{Counting}
+	
+	\begin{enumerate}
 		\item List: A list is an ordered collection of items.
 		
 		\item Multiplication Principle: The Multiplication Principle states that for 2-tuple with $m$ choices for the first element and $n$ choices for the second element, there are $mn$ possible lists that may be formed.
@@ -59,6 +62,12 @@
 		\item Factorial: Let $n,k\in\mathbb{N}$.
 		Factorial is equivalent to falling factorial when $n=k$.
 		We denote factorial as $n!$
+	
+	\end{enumerate}
+	
+	\section*{Sets}
+	
+	\begin{enumerate}
 		
 		\item Set: A set is a repetition-free, unordered collection of objects.
 		
@@ -81,10 +90,7 @@
 		The intersection of $A$ and $B$ is denoted $A\cap B$.
 		
 		\item Cardinality: The cardinality of a set $A$ is the number of elements in $A$.
-		We denote this as $|A|$.\\
-		
-		Note that given two sets $A$ and $B$,
-		
+		We denote this as $|A|$. Note that given two sets $A$ and $B$,
 		\[|A|+|B|=|A\cap B|+|A\cup B|\]
 		
 		\item Disjoint: Two sets $A$ and $B$ are called disjoint provided $A\cap B=\emptyset$.
@@ -94,7 +100,6 @@
 		
 		\item Addition Principle: Let $A$ and $B$ be finite sets.
 		If $A$ and $B$ are disjoint, then
-		
 		\[|A\cup B|=|A|+|B|\]
 		
 		\item Set Difference: Let $A$ and $B$ be sets.
@@ -109,6 +114,13 @@
 		\item Universe: A universe is the set of all objects under consideration for a certain context
 		
 		\item Set Complement: Given a set $A$, the complement of $A$, denoted $\bar A$, is the set of all elements of the universe that are not in $A$.
+	
+	
+	\end{enumerate}
+	
+	\section*{Relations}
+	
+	\begin{enumerate}
 		
 		\item Relation: A relation is a set of ordered pairs.
 		
@@ -152,9 +164,16 @@
 		A partition on $A$ is a set of nonempty, pairwise disjoint sets whose union is $A$.
 		
 		\item Binomial coefficient: Let $n,k\in\mathbb{N}$.
-		The symbol ${n\choose k}$ denotes the number of $k$ element subsets of an $n$ element set.\\
-		
-		Note that ${n\choose k}=\frac{n!}{k!(n-k)!}$
+		The symbol ${n\choose k}$ denotes the number of $k$ element subsets of an $n$ element set. Note that
+		\[
+		    {n\choose k}=\frac{n!}{k!(n-k)!}
+		\]
+	
+	\end{enumerate}
+	
+	\section*{Functions}
+	
+	\begin{enumerate}
 		
 		\item Function or Mapping: Let $A$ and $B$ be sets with $a\in A$ and $b,c\in B$.
 		A function $f$ is a relation on $A\times B$ provided $(a,b)\in f$ and $(a,c)\in f$ imply $b=c$.
