@@ -1,0 +1,340 @@
+\documentclass{article}
+
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\title{MATH UA 120 Definitions}
+\date{}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Divisible: Let $a,b$ be integers. We say that $b$ divides $a$ if 
+    
+    $$\exists c\in\mathbb{Z}\:\: \text{s.t.} \:\: bc=a$$
+    
+    \item Even: An integer $a$ is called even provided $2|a$.
+    
+    \item Odd: An integer $b$ is called odd if
+    
+    $$\exists a\in\mathbb{Z} \:\: \text{s.t.} \:\: b=2a+1$$
+    
+    \item Prime: An integer $p$ is prime if $p>1$ and the only positive divisors of $p$ are $1$ and $p$.
+    
+    \item Composite: An integer $a$ is composite if $a>0$ and there is an integer $b$ s.t. $1<b<a$ and $b|a$.
+    
+    \item Perfect integer: An integer $a$ is a perfect integer provided 
+    
+    $$a=\sum_{n=1}^k x,\:\: x_n|a$$
+    
+    \item List: A list is an ordered collection of items.
+    
+    \item Multiplication Principle: The Multiplication Principle states that for 2-tuple with $m$ choices for the first element and $n$ choices for the second element, there are $mn$ possible lists that may be formed.
+    
+    \item Falling Factorial: Let $n,k\in\mathbb{N}$. Falling factorial, denoted $(n)_k$, is calculated as
+    
+    $$(n)_k=n(n-1)(n-2)...(n-k+1)$$
+    
+    \item Factorial: Let $n,k\in\mathbb{N}$. Factorial is equivalent to falling factorial when $n=k$. We denote factorial as $n!$
+    
+    \item Set: A set is a repetition-free, unordered collection of objects.
+    
+    \item Subset: A set $A$ is called a subset of $B$ if for every $x\in A$, $x\in B$. We denote this as $A\subseteq B$. 
+    
+    \item Superset: A set $A$ is called a superset of $B$ if for every $x\in B$, $x\in A$. We denote this as $A\supseteq B$.
+    
+    \item Strict or Proper Subset: A set $A$ is called strict, or proper, subset of $B$ if $A \subseteq B$, $A\neq B$. This is denoted $A\subset B$ 
+    
+    \item Power set: If $A$ is a set, the power set of $A$ is the set of all subsets of $A$. The powerset of $A$ is denoted $2^A$.
+    
+    \item Union: The union of two sets $A$, $B$ is the set of all elements that are in $A$ or $B$. The union of $A$ and $B$ is denoted $A\cup B$.
+    
+    \item Intersection: The intersection of two sets $A$, $B$ is the set of all elements that are in $A$ and $B$. The intersection of $A$ and $B$ is denoted $A\cap B$.
+    
+    \item Cardinality: The cardinality of a set $A$ is the number of elements in $A$. We denote this as $|A|$.\\
+    
+    Note that given two sets $A$ and $B$, 
+    
+    $$|A|+|B|=|A\cap B|+|A\cup B|$$
+    
+    \item Disjoint: Two sets $A$ and $B$ are called disjoint provided $A\cap B=\emptyset$.
+    
+    \item Pairwise Disjoint: Let $A_1,A_2,...,A_n$ be a collection of sets. These sets are called pairwise disjoint provided $A_i\cap A_j=\emptyset$ whenever $i\neq j$.
+    
+    \item Addition Principle: Let $A$ and $B$ be finite sets. If $A$ and $B$ are disjoint, then 
+    
+    $$|A\cup B|=|A|+|B|$$
+    
+    \item Set Difference: Let $A$ and $B$ be sets. The set difference, denoted $A-B$, is the set of all elements of $A$ that are not in $B$.
+    
+    \item Symmetric Difference: Given two sets $A$ and $B$, the symmetric difference, denoted $A\Delta B$, is 
+    $$(A-B)\cup (B-A)$$
+    
+    \item Cartesian Product: Given two sets $A$ and $B$, their Cartesian product, denoted $A\times B$, is the set of all 2-tuples formed by taking an element from A together with an element from B.
+    
+    \item Universe: A universe is the set of all objects under consideration for a certain context
+    
+    \item Set Complement: Given a set $A$, the complement of $A$, denoted $\bar A$, is the set of all elements of the universe that are not in $A$.
+    
+    \item Relation: A relation is a set of ordered pairs.
+    
+    \item Relation On: Let $R$ be a relation and $A$ a set. We say $R$ is a relation on $A$ provided $R\subseteq A\times A$.
+    
+    \item Relation From: Let $R$ be a relation and $A$, $B$ sets. We say $R$ is a relation from $A$ to $B$ provided $R\subseteq A\times B$.
+    
+    \item Inverse Relation: Let $R$ be a relation. The inverse of $R$, denoted $R^{-1}$, is the relation formed by reversing the order of all ordered pairs in $R$.
+    
+    \item Reflexive: A relation $R$ on $A$ is reflexive if for all $x\in A$, $x$ $R$ $x$.
+    
+    \item Irreflexive: A relation $R$ on $A$ is irreflexive if for all $x\in A$, $x$ $\not R$ $x$.
+    
+    \item Symmetric: A relation $R$ on $A$ is symmetric if for all $x,y\in A$, 
+   
+    $x$ $R$ $y\implies y$ $R$ $x$.
+    
+    \item Antisymmetric: A relation $R$ on $A$ is antisymmetric if for all $x,y\in A$, 
+    
+    ($x$ $R$ $y\wedge y$ $R$ $x$) $\implies x=y$.
+    
+    \item Transitive:  A relation $R$ on $A$ is transitive if for all $x,y,z\in A$, 
+    
+    ($x$ $R$ $y\wedge y$ $R$ $z$) $\implies x$ $R$ $z$.
+    
+    \item Equivalence Relation: A relation is called an equivalence relation if it is reflexive, symmetric, and transitive.
+    
+    \item Congruence Modulo n: Let $n$ be a positive integer. Integers $x$ and $y$ are congruent modulo n if $n|(x-y)$. This is denoted $x \equiv y$ $(\text{mod}$ $n)$.\\
+    
+    Note that the relation is-congruent modulo n-to is an equivalence relation.
+    
+    \item Equivalence class: Let $R$ be an equivalence relation on a set $A$ and let $a\in A$. The equivalence class of $a$, denoted $[a]$, is the set of all elements related by $R$ to $a$.
+    
+    \item Partition: Let $A$ be a set. A partition on $A$ is a set of nonempty, pairwise disjoint sets whose union is $A$.
+    
+    \item Binomial coefficient: Let $n,k\in\mathbb{N}$. The symbol ${n\choose k}$ denotes the number of $k$ element subsets of an $n$ element set.\\
+    
+    Note that ${n\choose k}=\frac{n!}{k!(n-k)!}$
+    
+    \item Function or Mapping: Let $A$ and $B$ be sets with $a\in A$ and $b,c\in B$. A function $f$ is a relation on $A\times B$ provided $(a,b)\in f$ and $(a,c)\in f$ imply $b=c$. We may denote this function as $f: A\to B$.
+    
+    \item Domain: the domain of a function is the set of all possible first elements in the ordered pair of the function. In other words,
+    
+    $$\text{dom} f= \{a: \exists b, (a,b)\in f\}$$
+    
+    \item Image: the image of a function is the set of all possible second elements in the ordered pair of the function. In other words,
+    
+    $$\text{im} f= \{b: \exists a, (a,b)\in f\}$$
+    
+    \item Co-domain: The co-domain of a function is a superset of the image.
+    
+    \item Injective or One-to-One: A function $f$ is injective provided whenever $(x,b),(y,b)\in f$, $x=y$. An alternate definition is that $f$ is injective iff the inverse relation $f^{-1}$ is a function.
+    
+    \item Surjective or Onto: Let $f:A\to B$. A function is surjective when for every $b\in B, \exists a\in A$ s.t. $f(a)=b$. An alternate definition is that $f$ is surjective iff the image of $f$ equals the co-domain of $f$.
+    
+    \item Bijective: A function is bijective when it is both surjective and injective. An alternate definition is $f$ is bijective iff $f:A\to B$, then $f^{-1}:B\to A$. 
+    
+    \item Bijection: A bijective function is called a bijection.
+    
+    \item Pigeonhole Principle: Let $A$ and $B$ be finite sets with $f:A\to B$. If $|A|>|B|$, then $f$ is not one-to-one. If $|B|>|A|$, then $f$ is not onto.
+    
+    \item Erdos-Szekeres: Let $n$ be a positive integer. Every sequence of $n^2+1$ distinct integers must contain a monotone subsequence of length $n+1$.
+    
+    \item Cantor's Theorem: $|A|<2^{|A|}$ for all non-empty sets $A$.
+    
+    \item Composition of Functions: Let $A,B,C$ be sets and let $f:A\to B$ and $g:B\to C$. Then $g\circ f(a)=g[f(a)]$.
+    
+    \item Sample Space: A sample space is a pair $(S,P)$ where $S$ is a finite, nonempty set and $P$ is a function 
+    
+    $$P:S\to\mathbb{R}\: \text{s.t.}\: P(s)\geq 0 \: \text{for all}\: s\in S \:\text{and}\: \sum_{s\in S}P(s)=1$$
+    
+    \item Event: An event $A$ is a subset of $S$. The probability of an event, denoted $P(A)$, is given by 
+    
+    $$P(A)=\sum_{a\in A}P(a)$$
+    
+    \item Conditional probability: Let $A$ and $B$ be events in a sample space $(S,P)$ and suppose $P(B)\neq 0$. The conditional probability of $A$ given $B$ is denoted $P(A|B)$ and is given by 
+    
+    $$P(A|B)=\frac{P(A\cap B)}{P(B)}$$
+    
+    \item Independence: Two events are called independent if these equivalent conditions are met: 
+    
+    $$P(A|B)=P(A)\:\: \text{or} \:\: P(B|A)=P(B) \:\: \text{or} \:\: P(A\cap B)=P(A)P(B)$$
+    
+    \item Independent Repeated Trials: Let $(S,P)$ be a sample space and $n$ a positive integer. Let $S^n$ denote the set of all length $n$ lists of elements in $S$. Then $(S^n,P)$ is the $n$-fold repeated-trial sample space in which: 
+    
+    $$P[(s_1,s_2,...,s_n)]=P(s_1)P(s_2)...P(s_n)$$
+    
+    \item Random variable: A random variable is a function defined on a probability space; that is, if $(S,P)$ is a sample space, then a random variable is a function $X:S\to V$ for some set $V$.
+    
+    \item Independent Random Variables: Let $(S,P)$ be a sample space and let $X$ and $Y$ be random variables defined on $(S,P)$. We say that $X$ and $Y$ are independent if, for all $a,b$, 
+    
+    $$P(X=a\: \text{and} \: Y=b)=P(X=a)P(Y=b)$$
+    
+    \item Binomial Random Variable: Let $X$ be a random variable and $A$ an event with $P(A)=p$. If we conduct $n$ independent repeated trials, the probability that $A$ happens $h$ times is given by:
+    
+     $$P(X=h)= {n \choose h} p^h(1-p)^{n-h}$$ 
+    
+    \item Expected Value: Let $X$ be a real-valued random variable defined on a sample space $(S,P)$. The expectation of $X$, denoted $E(X)$ or $\mu$, is 
+    
+    $$E(X)=\mu=\sum_{s\in S}X(s)P(s)=\sum_{a\in\mathbb{R}}aP(X=a)$$ 
+    
+    \item Variance: Let $X$ be a real-valued random variable on a sample space $(S,P)$. Let $u=E(X)$. The variance of $X$ is
+    
+    $$\text{Var}(X)=E[(X-\mu)^2]=E[X^2]-E[X]^2$$
+    
+    \item Division: Let $a,b\in\mathbb{Z}$ with $b>0$. Then there exist unique integers $q$ and $r$ s.t. 
+    
+    $$a=qb+r \: \text{and} \: 0\leq r<b$$
+    
+    \item Div and Mod: Let $a,b\in\mathbb{Z}$ with $b>0$. We know that there are two unique integers $q,r$ with $a=qb+r$ and $0\leq r<b$. Then 
+    
+    $$a \:\text{div}\:b=q,\: a \:\text{mod}\: b=r$$
+    
+    Note that $a\equiv b (\mod n) \Longleftrightarrow a\mod n=b\mod n$.
+    
+    \item Common Division: Let $a,b\in\mathbb{Z}$. We call an integer $d$ a common divisor of $a,b$ provided $d|a$ and $d|b$.
+    
+    \item Greatest Common Divisor: Let $a,b\in\mathbb{Z}$. We call an integer $d$ the greatest common divisor of $a$ and $b$ provided $d$ is a common divisor of $a$ and $b$ and if $e$ is a common divisor of $a$ and $b$, then $e\leq d$. We denote the greatest common divisor of $a$ and $b$ as $\gcd(a,b)$.\\
+    
+    Note that if $a$ and $b$ are non-zero integers, the smallest positive integer of the form $ax+by$, for integers $x,y$, is $\gcd(a,b)$.
+    
+    \item Euler's Algorithm: Euler's Algorithm states that if $a,b$ are positive integers and $c=a\: \text{mod} \: b$, then 
+    
+    $$\gcd(a,b)=\gcd(b, c)$$ 
+    
+    \item Graph: A graph is a pair $G=(V,E)$, where $V$ is a nonempty finite set and $E$ is a set of two-element subsets of $V$. Elements of $V$ are called vertices, nodes, or points; elements of $E$ are called edges, arcs, links, or lines.
+    
+    \item Vertex and Edge Sets: the set of all vertices of a graph $G$ is denoted $V(G)$; the set of all edges of a graph $G$ is denoted $E(G)$. 
+    
+    \item Adjacency: Let $G=(V,E)$ be a graph and let $u,v\in V$. We say that $u$ is adjacent to (or joined to) $v$ if $\{u,v\}\in E$. We denote this as $u\sim v$.
+    
+    \item Incidence: Let $v$ be a vertex and an endpoint of edge $e$; in other words, $v\in e$. Then we say $v$ is incident on $e$.
+    
+    \item Neighbor: Two vertices that are adjacent are called neighbors.
+    
+    \item Neighborhood: The set of all neighbors of a vertex $v$ is called the neighborhood of $v$ and denoted $N(v)$.
+    
+    \item Degree: Let $G=(V,E)$ be a graph and let $v\in V$. The degree of $v$ is the number of edges with which $v$ is incident. We denote the degree of $v$ as $d_G(v)$ or $d(v)$ if there is no risk of confusion.\\
+    
+    Note that the sum of the degrees of all vertices in a graph $G$ is twice the number of edges.\\
+    
+    Also note that the maximum degree of a vertex in $G$ is denoted $\Delta(G)$, while the minimum degree is denoted $\delta(G)$.
+    
+    \item Regular Graph: A graph $G$ is regular if all vertices in $G$ have the same degree. If a graph is regular and all is vertices have degree $r$, the graph is called $r-$regular.
+    
+    \item Order and Size: Let $G(V,E)$ be a graph. The order of $G$ is $|V|$. The size of $G$ is $|E|$. Customarily, we set $n=|V|$ and $m=|E|$. However, some authors use $\nu(G)=|V(G)|$, $\upvarepsilon(G)=|E(G)|$.\\
+    
+    Note that in the latter denotation, we think of $\nu$ and $\upvarepsilon$ as functions that map from a graph $G$ to the natural numbers.
+
+    \item Complete Graph: Let $G$ be a graph. If all pairs of distinct vertices are adjacent in $G$, we call $G$ complete. A complete graph on $n$ vertices is denoted $K_n$.
+    
+    \item Edgeless Graph: Let $G$ be a graph. If $E(G)$ is empty, we call $G$ edgeless. An edgeless graph on $n$ vertices is denoted $E_n$.
+    
+    \item Subgraph: Let $G$ and $H$ be graphs. We call $G$ a subgraph of $H$ provided $V(G)\subseteq V(H)$ and $E(G)\subseteq E(H)$.
+    
+    \item Spanning Subgraph: Let $G$ and $H$ be graphs. We call $G$ a spanning subgraph of $H$ provided $G$ is a subgraph of $H$ and $V(G)=V(H)$.\\
+    
+    In other words, $G$ is $H$ with at least one edge removed. If this edge is named $e$, then we denote this as $G=H-e$.
+    
+    \item Induced Subgraph: Let $H$ be a graph and let $A\subseteq V(H)$. The subgraph of $H$ induced on $A$ is the graph $H[A]$ defined by 
+    
+    $$V(H[A])=A, \: E(H[A])=\{\{x,y\}\in E(H): x,y\in A\}$$
+    
+    \item Clique, Clique Number: Let $G$ be a graph. A subset of vertices $S\subseteq V(G)$ is called a clique provided any two distinct vertices in $S$ are adjacent. In other words, a set $S\subseteq V(G)$ is called a clique provided $G[S]$ is a complete graph.\\
+    
+    The clique number of $G$ is the size of a largest clique; it is denoted $\omega (G)$.
+    
+    \item Independent Set, Independence Number: Let $G$ be a graph. A subset of vertices $S\subseteq V(G)$ is called an independent set provided no two vertices in $S$ are adjacent. In other words, a set $S\subseteq V(G)$ is called an independent set provided $G[S]$ is an edgeless graph.\\
+    
+    The independence number of $G$ is the size of a largest independent set; it is denoted $\alpha (G)$. 
+    
+    \item Complement: Let $G$ be a graph. The complement of $G$, denoted $\bar G$, is defined by 
+    
+    $$V(\bar G)=V(G)\: \text{and}\: E(\bar G)=\{\{x,y\}: x,y \in V(G), x\neq y, \{x,y\}\not\in E(G)\}$$
+    
+    Note that $\omega(G)=\alpha(\bar G)$ and $\alpha(G)=\omega(\bar G)$.
+    
+    \item Ramsey's Theorem: either $G$ or its complement, $\bar G$, has a "large" clique. In a special case, if $G$ is a graph with at least order $6$, then $\omega(G)\geq 3$ or $\omega(\bar G)\geq 3$.
+    
+    \item Walk: Let $G=(V,E)$ be a graph. A walk in $G$ is a list of vertices, with each vertex adjacent to the next; that is, $W=v_0\sim v_1\sim...\sim v_\ell$. If $u,v\in V(G)$ and there is a walk whose first vertex is $u$ and last vertex is $v$, then we say there is a $(u,v)-$walk in $G$.\\
+    
+    The length of the walk is $\ell$. However, there are actually $\ell +1$ vertices on the walk.
+    
+    \item Concatenation: Let $G$ be a graph and let $W_1$, $W_2$ be walks in $G$ with $W_1=v_0\sim v_1\sim ...\sim v_\ell$ and $W_2=w_0\sim w_1\sim ...\sim w_k$. Suppose $v_\ell=w_0$. Their concatenation, denoted $W_1+W_2$, is the walk 
+    
+    $$W_1+W_2=v_0\sim v_1\sim...\sim(v_\ell=w_0)\sim w_1\sim...\sim w_k$$
+    
+    Note that $W_1+W_2$ has length $n+k$ (but with $n+k+2$ vertices on the walk!)
+    
+    \item Path: A path in a graph $G$ is a walk in $G$ in which no vertex is repeated. If $u,v\in V(G)$ and there is a path whose first vertex is $u$ and last vertex is $v$, then we say there is a $(u,v)-$path in $G$. \\
+    
+    Note that if there is a $(u,v)-$walk in $G$, the shortest $(u,v)-$ walk is a $(u,v)-$path.
+    
+    \item Path (graph): A path is a graph with vertex set $V=\{v_1,v_2,...v_n\}$ and edge set $E=\{\{v_i,v_{i+1}\}:1\leq i<n\}$.\\
+    
+    A path on $n$ vertices is denoted $P_n$.
+    
+    \item Hamiltonian Path: Let $G$ be a graph. A path in $G$ that contains all the vertices of $G$ is called a Hamiltonian path.
+    
+    \item Connected to: let $G$ be a graph and let $u,v\in V(G)$. If a $(u,v)-$path exists, then we say $u$ is connected to $v$.\\
+    
+    Note that the relation is-connected-to is an equivalence relation.
+    
+    \item Component: A component of $G$ is a subgraph of $G$ induced on an equivalence class of the is-connected-to relation on $V(G)$.
+    
+    \item Connected: A graph is called connected provided each pair of vertices in the graph is connected by a path. Equivalently, a graph is called connected if it only has one component. 
+    
+    \item Cut Vertex: Let $G$ be a graph. A vertex $v\in V(G)$ is called a cut vertex of $G$ provided $G-v$ has more components than $G$.
+    
+    \item Cut Edge: Let $G$ be a graph. An edge $v\in V(G)$ is called a cut edge of $G$ provided $G-e$ has more components than $G$.
+    
+    \item Cycle (walk): A cycle is a walk of length at least three in which the first and last vertex are the same, but no other vertices are repeated.
+    
+    \item Cycle (graph): A cycle is a graph or subgraph consisting of the vertices and edges of a cycle (walk). In other words, a cycle is a graph of the form $G=(v,E)$ where 
+    
+    $$V=\{v_1,v_2,...,v_n\} \:\: \text{and}$$
+    
+    $$E=\{\{v_1,v_2\}, \{v_3,v_4\}...,\{v_{n-1},v_n\},\{v_nv_1\}\}$$
+    
+    A graph with $n$ vertices consisting solely of a cycle is denoted $C_n$.
+    
+    \item Hamiltonian Cycle: Let $G$ be a graph. A cycle of $G$ that contains all the vertices in $G$ is called a Hamiltonian cycle.
+    
+    \item Forest or Acyclic Graph: Let $G$ be a graph. If $G$ contains no cycles, then we call $G$ a forest. Alternatively, we call $G$ acyclic.
+    
+    \item Tree: A tree is a connected, acyclic graph. In other words, a tree is a connected forest. We denote a tree with $n$ vertices as $T_n$.\\
+    
+    Note that a single isolated vertex ($K_1$ or $E_1$) is a tree.\\
+    
+    There are also several alternate definitions of a tree:
+    
+        \begin{enumerate}
+            \item A graph $G$ is a tree iff for any two vertices $u,v\in V(G)$, there is a unique $(u,v)-$path. 
+            \item A connected graph $G$ is a tree iff every edge of $G$ is a cut edge.
+            \item A connected graph $G$ with $n\geq 1$ vertices is a tree iff $G$ has exactly $n-1$ edges.
+        \end{enumerate}
+        
+    \item Leaf: A leaf of a graph is a vertex of degree 1.
+    
+    \item Spanning Tree: Let $G$ be a graph. A spanning tree of $G$ is a spanning subgraph of $G$ that is a tree. 
+    
+\end{enumerate}
+
+\end{document}
