@@ -30,13 +30,13 @@
 \begin{enumerate}
     \item Divisible: Let $a,b$ be integers. We say that $b$ divides $a$ if 
     
-    $$\exists c\in\mathbb{Z}\:\: \text{s.t.} \:\: bc=a$$
+    \[\exists c\in\mathbb{Z}\:\: \text{s.t.} \:\: bc=a\]
     
     \item Even: An integer $a$ is called even provided $2|a$.
     
     \item Odd: An integer $b$ is called odd if
     
-    $$\exists a\in\mathbb{Z} \:\: \text{s.t.} \:\: b=2a+1$$
+    \[\exists a\in\mathbb{Z} \:\: \text{s.t.} \:\: b=2a+1\]
     
     \item Prime: An integer $p$ is prime if $p>1$ and the only positive divisors of $p$ are $1$ and $p$.
     
@@ -44,7 +44,7 @@
     
     \item Perfect integer: An integer $a$ is a perfect integer provided 
     
-    $$a=\sum_{n=1}^k x,\:\: x_n|a$$
+    \[a=\sum_{n=1}^k x,\:\: x_n|a\]
     
     \item List: A list is an ordered collection of items.
     
@@ -52,7 +52,7 @@
     
     \item Falling Factorial: Let $n,k\in\mathbb{N}$. Falling factorial, denoted $(n)_k$, is calculated as
     
-    $$(n)_k=n(n-1)(n-2)...(n-k+1)$$
+    \[(n)_k=n(n-1)(n-2)...(n-k+1)\]
     
     \item Factorial: Let $n,k\in\mathbb{N}$. Factorial is equivalent to falling factorial when $n=k$. We denote factorial as $n!$
     
@@ -74,20 +74,20 @@
     
     Note that given two sets $A$ and $B$, 
     
-    $$|A|+|B|=|A\cap B|+|A\cup B|$$
+    \[|A|+|B|=|A\cap B|+|A\cup B|\]
     
     \item Disjoint: Two sets $A$ and $B$ are called disjoint provided $A\cap B=\emptyset$.
     
-    \item Pairwise Disjoint: Let $A_1,A_2,...,A_n$ be a collection of sets. These sets are called pairwise disjoint provided $A_i\cap A_j=\emptyset$ whenever $i\neq j$.
+    \item Pairwise Disjoint: Let $A_1,A_2,\dots,A_n$ be a collection of sets. These sets are called pairwise disjoint provided $A_i\cap A_j=\emptyset$ whenever $i\neq j$.
     
     \item Addition Principle: Let $A$ and $B$ be finite sets. If $A$ and $B$ are disjoint, then 
     
-    $$|A\cup B|=|A|+|B|$$
+    \[|A\cup B|=|A|+|B|\]
     
     \item Set Difference: Let $A$ and $B$ be sets. The set difference, denoted $A-B$, is the set of all elements of $A$ that are not in $B$.
     
     \item Symmetric Difference: Given two sets $A$ and $B$, the symmetric difference, denoted $A\Delta B$, is 
-    $$(A-B)\cup (B-A)$$
+    \[(A-B)\cup (B-A)\]
     
     \item Cartesian Product: Given two sets $A$ and $B$, their Cartesian product, denoted $A\times B$, is the set of all 2-tuples formed by taking an element from A together with an element from B.
     
@@ -137,11 +137,11 @@
     
     \item Domain: the domain of a function is the set of all possible first elements in the ordered pair of the function. In other words,
     
-    $$\text{dom} f= \{a: \exists b, (a,b)\in f\}$$
+    \[\text{dom} f= \{a: \exists b, (a,b)\in f\}\]
     
     \item Image: the image of a function is the set of all possible second elements in the ordered pair of the function. In other words,
     
-    $$\text{im} f= \{b: \exists a, (a,b)\in f\}$$
+    \[\text{im} f= \{b: \exists a, (a,b)\in f\}\]
     
     \item Co-domain: The co-domain of a function is a superset of the image.
     
@@ -163,49 +163,49 @@
     
     \item Sample Space: A sample space is a pair $(S,P)$ where $S$ is a finite, nonempty set and $P$ is a function 
     
-    $$P:S\to\mathbb{R}\: \text{s.t.}\: P(s)\geq 0 \: \text{for all}\: s\in S \:\text{and}\: \sum_{s\in S}P(s)=1$$
+    \[P:S\to\mathbb{R}\: \text{s.t.}\: P(s)\geq 0 \: \text{for all}\: s\in S \:\text{and}\: \sum_{s\in S}P(s)=1\]
     
     \item Event: An event $A$ is a subset of $S$. The probability of an event, denoted $P(A)$, is given by 
     
-    $$P(A)=\sum_{a\in A}P(a)$$
+    \[P(A)=\sum_{a\in A}P(a)\]
     
     \item Conditional probability: Let $A$ and $B$ be events in a sample space $(S,P)$ and suppose $P(B)\neq 0$. The conditional probability of $A$ given $B$ is denoted $P(A|B)$ and is given by 
     
-    $$P(A|B)=\frac{P(A\cap B)}{P(B)}$$
+    \[P(A|B)=\frac{P(A\cap B)}{P(B)}\]
     
     \item Independence: Two events are called independent if these equivalent conditions are met: 
     
-    $$P(A|B)=P(A)\:\: \text{or} \:\: P(B|A)=P(B) \:\: \text{or} \:\: P(A\cap B)=P(A)P(B)$$
+    \[P(A|B)=P(A)\:\: \text{or} \:\: P(B|A)=P(B) \:\: \text{or} \:\: P(A\cap B)=P(A)P(B)\]
     
     \item Independent Repeated Trials: Let $(S,P)$ be a sample space and $n$ a positive integer. Let $S^n$ denote the set of all length $n$ lists of elements in $S$. Then $(S^n,P)$ is the $n$-fold repeated-trial sample space in which: 
     
-    $$P[(s_1,s_2,...,s_n)]=P(s_1)P(s_2)...P(s_n)$$
+    \[P[(s_1,s_2,...,s_n)]=P(s_1)P(s_2)...P(s_n)\]
     
     \item Random variable: A random variable is a function defined on a probability space; that is, if $(S,P)$ is a sample space, then a random variable is a function $X:S\to V$ for some set $V$.
     
     \item Independent Random Variables: Let $(S,P)$ be a sample space and let $X$ and $Y$ be random variables defined on $(S,P)$. We say that $X$ and $Y$ are independent if, for all $a,b$, 
     
-    $$P(X=a\: \text{and} \: Y=b)=P(X=a)P(Y=b)$$
+    \[P(X=a\: \text{and} \: Y=b)=P(X=a)P(Y=b)\]
     
     \item Binomial Random Variable: Let $X$ be a random variable and $A$ an event with $P(A)=p$. If we conduct $n$ independent repeated trials, the probability that $A$ happens $h$ times is given by:
     
-     $$P(X=h)= {n \choose h} p^h(1-p)^{n-h}$$ 
+     \[P(X=h)= {n \choose h} p^h(1-p)^{n-h}\]
     
     \item Expected Value: Let $X$ be a real-valued random variable defined on a sample space $(S,P)$. The expectation of $X$, denoted $E(X)$ or $\mu$, is 
     
-    $$E(X)=\mu=\sum_{s\in S}X(s)P(s)=\sum_{a\in\mathbb{R}}aP(X=a)$$ 
+    \[E(X)=\mu=\sum_{s\in S}X(s)P(s)=\sum_{a\in\mathbb{R}}aP(X=a)\]
     
     \item Variance: Let $X$ be a real-valued random variable on a sample space $(S,P)$. Let $u=E(X)$. The variance of $X$ is
     
-    $$\text{Var}(X)=E[(X-\mu)^2]=E[X^2]-E[X]^2$$
+    \[\text{Var}(X)=E[(X-\mu)^2]=E[X^2]-E[X]^2\]
     
     \item Division: Let $a,b\in\mathbb{Z}$ with $b>0$. Then there exist unique integers $q$ and $r$ s.t. 
     
-    $$a=qb+r \: \text{and} \: 0\leq r<b$$
+    \[a=qb+r \: \text{and} \: 0\leq r<b\]
     
     \item Div and Mod: Let $a,b\in\mathbb{Z}$ with $b>0$. We know that there are two unique integers $q,r$ with $a=qb+r$ and $0\leq r<b$. Then 
     
-    $$a \:\text{div}\:b=q,\: a \:\text{mod}\: b=r$$
+    \[a \:\text{div}\:b=q,\: a \:\text{mod}\: b=r\]
     
     Note that $a\equiv b (\mod n) \Longleftrightarrow a\mod n=b\mod n$.
     
@@ -217,7 +217,7 @@
     
     \item Euler's Algorithm: Euler's Algorithm states that if $a,b$ are positive integers and $c=a\: \text{mod} \: b$, then 
     
-    $$\gcd(a,b)=\gcd(b, c)$$ 
+    \[\gcd(a,b)=\gcd(b, c)\]
     
     \item Graph: A graph is a pair $G=(V,E)$, where $V$ is a nonempty finite set and $E$ is a set of two-element subsets of $V$. Elements of $V$ are called vertices, nodes, or points; elements of $E$ are called edges, arcs, links, or lines.
     
@@ -255,7 +255,7 @@
     
     \item Induced Subgraph: Let $H$ be a graph and let $A\subseteq V(H)$. The subgraph of $H$ induced on $A$ is the graph $H[A]$ defined by 
     
-    $$V(H[A])=A, \: E(H[A])=\{\{x,y\}\in E(H): x,y\in A\}$$
+    \[V(H[A])=A, \: E(H[A])=\{\{x,y\}\in E(H): x,y\in A\}\]
     
     \item Clique, Clique Number: Let $G$ be a graph. A subset of vertices $S\subseteq V(G)$ is called a clique provided any two distinct vertices in $S$ are adjacent. In other words, a set $S\subseteq V(G)$ is called a clique provided $G[S]$ is a complete graph.\\
     
@@ -267,19 +267,19 @@
     
     \item Complement: Let $G$ be a graph. The complement of $G$, denoted $\bar G$, is defined by 
     
-    $$V(\bar G)=V(G)\: \text{and}\: E(\bar G)=\{\{x,y\}: x,y \in V(G), x\neq y, \{x,y\}\not\in E(G)\}$$
+    \[V(\bar G)=V(G)\: \text{and}\: E(\bar G)=\{\{x,y\}: x,y \in V(G), x\neq y, \{x,y\}\not\in E(G)\}\]
     
     Note that $\omega(G)=\alpha(\bar G)$ and $\alpha(G)=\omega(\bar G)$.
     
     \item Ramsey's Theorem: either $G$ or its complement, $\bar G$, has a "large" clique. In a special case, if $G$ is a graph with at least order $6$, then $\omega(G)\geq 3$ or $\omega(\bar G)\geq 3$.
     
-    \item Walk: Let $G=(V,E)$ be a graph. A walk in $G$ is a list of vertices, with each vertex adjacent to the next; that is, $W=v_0\sim v_1\sim...\sim v_\ell$. If $u,v\in V(G)$ and there is a walk whose first vertex is $u$ and last vertex is $v$, then we say there is a $(u,v)-$walk in $G$.\\
+    \item Walk: Let $G=(V,E)$ be a graph. A walk in $G$ is a list of vertices, with each vertex adjacent to the next; that is, $W=v_0\sim v_1\sim\dots\sim v_\ell$. If $u,v\in V(G)$ and there is a walk whose first vertex is $u$ and last vertex is $v$, then we say there is a $(u,v)-$walk in $G$.\\
     
     The length of the walk is $\ell$. However, there are actually $\ell +1$ vertices on the walk.
     
-    \item Concatenation: Let $G$ be a graph and let $W_1$, $W_2$ be walks in $G$ with $W_1=v_0\sim v_1\sim ...\sim v_\ell$ and $W_2=w_0\sim w_1\sim ...\sim w_k$. Suppose $v_\ell=w_0$. Their concatenation, denoted $W_1+W_2$, is the walk 
+    \item Concatenation: Let $G$ be a graph and let $W_1$, $W_2$ be walks in $G$ with $W_1=v_0\sim v_1\sim \dots\sim v_\ell$ and $W_2=w_0\sim w_1\sim \dots\sim w_k$. Suppose $v_\ell=w_0$. Their concatenation, denoted $W_1+W_2$, is the walk
     
-    $$W_1+W_2=v_0\sim v_1\sim...\sim(v_\ell=w_0)\sim w_1\sim...\sim w_k$$
+    \[W_1+W_2=v_0\sim v_1\sim...\sim(v_\ell=w_0)\sim w_1\sim...\sim w_k\]
     
     Note that $W_1+W_2$ has length $n+k$ (but with $n+k+2$ vertices on the walk!)
     
@@ -287,7 +287,7 @@
     
     Note that if there is a $(u,v)-$walk in $G$, the shortest $(u,v)-$ walk is a $(u,v)-$path.
     
-    \item Path (graph): A path is a graph with vertex set $V=\{v_1,v_2,...v_n\}$ and edge set $E=\{\{v_i,v_{i+1}\}:1\leq i<n\}$.\\
+    \item Path (graph): A path is a graph with vertex set $V=\{v_1,v_2,\dotsv_n\}$ and edge set $E=\{\{v_i,v_{i+1}\}:1\leq i<n\}$.\\
     
     A path on $n$ vertices is denoted $P_n$.
     
@@ -309,9 +309,9 @@
     
     \item Cycle (graph): A cycle is a graph or subgraph consisting of the vertices and edges of a cycle (walk). In other words, a cycle is a graph of the form $G=(v,E)$ where 
     
-    $$V=\{v_1,v_2,...,v_n\} \:\: \text{and}$$
+    \[V=\{v_1,v_2,...,v_n\} \:\: \text{and}\]
     
-    $$E=\{\{v_1,v_2\}, \{v_3,v_4\}...,\{v_{n-1},v_n\},\{v_nv_1\}\}$$
+    \[E=\{\{v_1,v_2\}, \{v_3,v_4\}...,\{v_{n-1},v_n\},\{v_nv_1\}\}\]
     
     A graph with $n$ vertices consisting solely of a cycle is denoted $C_n$.
     
