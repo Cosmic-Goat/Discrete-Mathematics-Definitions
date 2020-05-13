@@ -29,9 +29,9 @@
 
 \begin{enumerate}
     \item Divisible: Let $a,b$ be integers. We say that $b$ divides $a$ if 
-    
+
     \[\exists c\in\mathbb{Z}\:\: \text{s.t.} \:\: bc=a\]
-    
+
     \item Even: An integer $a$ is called even provided $2|a$.
     
     \item Odd: An integer $b$ is called odd if
@@ -52,7 +52,7 @@
     
     \item Falling Factorial: Let $n,k\in\mathbb{N}$. Falling factorial, denoted $(n)_k$, is calculated as
     
-    \[(n)_k=n(n-1)(n-2)...(n-k+1)\]
+    \[(n)_k=n(n-1)(n-2)\dots(n-k+1)\]
     
     \item Factorial: Let $n,k\in\mathbb{N}$. Factorial is equivalent to falling factorial when $n=k$. We denote factorial as $n!$
     
@@ -179,7 +179,7 @@
     
     \item Independent Repeated Trials: Let $(S,P)$ be a sample space and $n$ a positive integer. Let $S^n$ denote the set of all length $n$ lists of elements in $S$. Then $(S^n,P)$ is the $n$-fold repeated-trial sample space in which: 
     
-    \[P[(s_1,s_2,...,s_n)]=P(s_1)P(s_2)...P(s_n)\]
+    \[P[(s_1,s_2,\dots,s_n)]=P(s_1)P(s_2)\dotsP(s_n)\]
     
     \item Random variable: A random variable is a function defined on a probability space; that is, if $(S,P)$ is a sample space, then a random variable is a function $X:S\to V$ for some set $V$.
     
@@ -279,7 +279,7 @@
     
     \item Concatenation: Let $G$ be a graph and let $W_1$, $W_2$ be walks in $G$ with $W_1=v_0\sim v_1\sim \dots\sim v_\ell$ and $W_2=w_0\sim w_1\sim \dots\sim w_k$. Suppose $v_\ell=w_0$. Their concatenation, denoted $W_1+W_2$, is the walk
     
-    \[W_1+W_2=v_0\sim v_1\sim...\sim(v_\ell=w_0)\sim w_1\sim...\sim w_k\]
+    \[W_1+W_2=v_0\sim v_1\sim\dots\sim(v_\ell=w_0)\sim w_1\sim\dots\sim w_k\]
     
     Note that $W_1+W_2$ has length $n+k$ (but with $n+k+2$ vertices on the walk!)
     
@@ -309,9 +309,9 @@
     
     \item Cycle (graph): A cycle is a graph or subgraph consisting of the vertices and edges of a cycle (walk). In other words, a cycle is a graph of the form $G=(v,E)$ where 
     
-    \[V=\{v_1,v_2,...,v_n\} \:\: \text{and}\]
+    \[V=\{v_1,v_2,\dots,v_n\} \:\: \text{and}\]
     
-    \[E=\{\{v_1,v_2\}, \{v_3,v_4\}...,\{v_{n-1},v_n\},\{v_nv_1\}\}\]
+    \[E=\{\{v_1,v_2\}, \{v_3,v_4\}\dots,\{v_{n-1},v_n\},\{v_nv_1\}\}\]
     
     A graph with $n$ vertices consisting solely of a cycle is denoted $C_n$.
     
